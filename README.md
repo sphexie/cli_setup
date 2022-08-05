@@ -15,3 +15,5 @@ passwd ubuntu
 chsh -s $(which zsh)
 # set timezone
 sudo timedatectl set-timezone Europe/Rome
+# git remember credentials
+git config --global credential.helper store
