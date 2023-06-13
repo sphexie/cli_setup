@@ -12,11 +12,9 @@ fi
 # ------------
 source "/opt/homebrew/opt/fzf/shell/key-bindings-custom.zsh"
 
-
 # Options
 # ------------
 export FZF_DEFAULT_OPTS='--no-mouse'
-
 
 # Functions
 # ------------
@@ -25,8 +23,8 @@ _fzf_comprun() {
   shift
 
   case "$command" in
-    cd)         find . -type d | fzf --preview 'tree -C {}' --bind '\:preview-page-up,/:preview-page-down'                                                      "$@";;
-    vim)        find . -type f -not -path '*/.*/*' | fzf --preview 'bat --color=always --style=numbers {}' --bind '\:preview-page-up,/:preview-page-down'       "$@";;
-    *)          fzf                                                                                                                                             "$@";;
+    cd)         find . -type d | fzf --preview 'tree -C {}' --bind '\:preview-page-up,/:preview-page-down'                                                      	"$@";;
+    vim)        find . -type f -not -path '*/.*/*' | fzf --multi --preview 'bat --color=always --style=numbers {}' --bind '\:preview-page-up,/:preview-page-down'	"$@";;
+    *)          fzf                                                                                                                                             	"$@";;
   esac
 }
