@@ -12,6 +12,10 @@ fi
 # ------------
 source "/opt/homebrew/opt/fzf/shell/key-bindings-custom.zsh"
 
+bindkey -r "^T" 
+bindkey -r "^[c" 
+bindkey -r "^I" 
+
 # Options
 # ------------
 export FZF_DEFAULT_OPTS='--no-mouse'
