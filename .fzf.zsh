@@ -53,6 +53,6 @@ _fzf_comprun() {
                                                                     --preview 'git show {+1} | bat --color=always --style=numbers' \
                                                                     --bind '\:preview-page-up,/:preview-page-down' \
                                                                     "$@";;
-    *)          fzf                                                                                                                                             	                                      "$@";;
+    *)          fzf     "$@";;
   esac
 }
