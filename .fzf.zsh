@@ -10,7 +10,11 @@ fi
 
 # Key bindings
 # ------------
-source "/opt/homebrew/opt/fzf/shell/key-bindings-custom.zsh"
+source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
+
+bindkey -r "^T" 
+bindkey -r "^[c" 
+bindkey -r "^I" 
 
 # Options
 # ------------
