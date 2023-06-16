@@ -17,6 +17,8 @@ chsh -s $(which zsh)
 sudo timedatectl set-timezone Europe/Rome
 # git remember credentials
 git config --global credential.helper store
+# git automatically create local new branch on remote
+git config --global --add --bool push.autoSetupRemote true
 # allow docker to be used without sudo
 sudo groupadd docker
 sudo usermod -aG docker $USER
