@@ -76,6 +76,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set foldmethod=indent
 let NERDTreeIgnore=['\.swp$', '\~$']
 set number
+set relativenumber
 set hlsearch
 syntax enable
 colorscheme nord
