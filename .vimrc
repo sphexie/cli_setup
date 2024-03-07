@@ -39,7 +39,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-let g:airline_powerline_fonts = 1 
+let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
@@ -73,10 +73,10 @@ set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=4
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-set foldmethod=indent
-let NERDTreeIgnore=['\.swp$', '\~$']
 set number
 set relativenumber
+set foldmethod=indent
+let NERDTreeIgnore=['\.swp$', '\~$']
 set hlsearch
 syntax enable
 colorscheme nord
